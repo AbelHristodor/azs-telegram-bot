@@ -1,0 +1,6 @@
+disable=
+    line-too-long,
+    unused-argument,
+    invalid-name,
+    bare-except,
+    broad-except
