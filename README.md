@@ -10,7 +10,7 @@ When ready run:
 and then start the bot using:
 ```python3 main.py```
 ___
-*Make sure you have python 3 and pip installed otherwise run:*\
+*Make sure you have python 3 and pip installed otherwise run:*
 ### *On Linux OS*
 
  ```
@@ -22,9 +22,11 @@ Check [Python's Official Website](https://www.python.org/)
 
 _____
 
+### Supported features:
+- Get Devotionals for the youth, children and adults
+- Set up Daily daily devotionals
+*Currently under development*
+
 For more information check [Python-Telegram-Bot's Repository](https://core.telegram.org/bots)
 
 To host your bot see [Python-Telegram-Bot - Hosting](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Hosting-your-bot)
-
-
-*Currently under development*
