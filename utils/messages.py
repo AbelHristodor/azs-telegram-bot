@@ -8,7 +8,7 @@ Contains the messages used by the bot.
 
 """
 WELCOME_MESSAGE = "<i>Bine ati venit in grupul Bisericii Adventiste de Ziua a Saptea din Verona: <strong>$user</strong> </i>"
-START_MESSAGE = "<strong>Buna tuturor, eu sunt Bot, si sunt aici sa va ajut cu ce aveti nevoie</strong>\n"
+START_MESSAGE = "<strong>Buna tuturor, eu sunt Toby, si sunt aici sa va ajut cu ce aveti nevoie</strong>\n"
 HELP_MESSAGE = """
     Comenzi disponibile:\n
         - /zilnic --> Pentru a configura devotionalul zilnic
