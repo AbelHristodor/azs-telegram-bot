@@ -25,6 +25,7 @@ _____
 ### Supported features:
 - Get Devotionals for the youth, children and adults
 - Set up Daily daily devotionals
+
 *Currently under development*
 
 For more information check [Python-Telegram-Bot's Repository](https://core.telegram.org/bots)
