@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 dotenv.load_dotenv()
 
 db_client = MongoClient(os.getenv('MONGODB_URI'))
-db = db_client.test_bot.test_bot_collection
+db = db_client.TobyBot.test_bot_collection
 
 def chat_id_exists(chat_id: int) -> bool:
     """ Checks if chat_id exists already in db """
