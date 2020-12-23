@@ -27,7 +27,8 @@ from utils.messages import (
     COMMAND_NOT_FOUND_MESSAGE,
     HELP_MESSAGE,
     DEVOTIONAL_TYPES,
-    CURRENT_SETTINGS_MESSAGE
+    CURRENT_SETTINGS_MESSAGE,
+    CHURCH_ADDRESS
 )
 
 from conversations.configuration_conv import configuration_conversation_handler
@@ -116,6 +117,11 @@ def help_message(update: Update, context: CallbackContext) -> None:
     context.bot.send_message(chat_id=update.effective_chat.id, text=HELP_MESSAGE, parse_mode=ParseMode.HTML)
 
 
+def church_address(update: Update, context: CallbackContext) -> None:
+    """ Sends the address of the church to the chat """
+    context.bot.send_message(chat_id=update.effective_chat.id, text=CHURCH_ADDRESS, parse_mode=ParseMode.HTML)
+
+
 # Must be added last
 def unknown(update: Update, context: CallbackContext, text: str = COMMAND_NOT_FOUND_MESSAGE) -> None:
     """ Handles not recognized commands sent in the chat """
@@ -164,6 +170,7 @@ def main() -> None:
     dispatcher.add_handler(CommandHandler('majori', devotional_majori, run_async=True))
     dispatcher.add_handler(CommandHandler('tineri', devotional_tineri, run_async=True))
     dispatcher.add_handler(CommandHandler('explo', devotional_exploratori, run_async=True))
+    dispatcher.add_handler(CommandHandler('adresa', church_address, run_async=True))
     dispatcher.add_handler(MessageHandler(Filters.status_update.new_chat_members, welcome_new_user, run_async=True))
     dispatcher.add_handler(CommandHandler('setari', show_settings, run_async=True))
 
